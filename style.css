@@ -1,1 +1,21 @@
-@import url(style/home.css);
+@import url(/style/home.css);
+.cleft {
+  width: 50%;
+  margin: 20px;
+}
+.cleft h1 {
+  font-size: 7.5rem;
+  margin-top: 3.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 950;
+  color: #0064A5;
+}
+.cleft h3 {
+  font-size: medium;
+  font-weight: 300;
+}
+.cleft button {
+  width: 13rem;
+  background-color: #0064A5;
+  border: none;
+}/*# sourceMappingURL=style.css.map */
