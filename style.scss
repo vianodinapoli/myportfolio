@@ -13,13 +13,13 @@ $primaria: #0064A5;
 }
 
 .cleft{
-    width: 50%;
-    margin: 20px;
+    width: 60%;
+    margin-top: 1.5rem;
     
 
     h1{
         font-size: 7.5rem;
-        margin-top: 3.5rem;
+        margin-top: 0.5rem;
         font-family: 'Roboto', sans-serif;
         font-weight:950;
         color: $primaria;
@@ -34,7 +34,64 @@ $primaria: #0064A5;
         width: 13rem;
         background-color: $primaria;
         border: none;
+        position: static;
     }
 
 
 }
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.course {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	display: flex;
+	max-width: 100%;
+	margin: 20px;
+	overflow: hidden;
+	width: 520px;
+    margin-top: 25rem;
+}
+
+.course h6 {
+	opacity: 0.6;
+	margin: 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.course h2 {
+	letter-spacing: 1px;
+	margin: 10px 0;
+}
+
+.course-preview {
+	background-color: $primaria;
+	color: #fff;
+	padding: 30px;
+	max-width: 175px;
+}
+
+.course-preview a {
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	opacity: 0.6;
+	margin-top: 30px;
+	text-decoration: none;
+}
+
+.course-info {
+	padding: 30px;
+	position: relative;
+	width: 100%;
+}
+
+
