@@ -1,25 +1,45 @@
-@import url(/style/home.css);
 
-$primaria: #0064A5;
+$primaria: #263e74;
 
+*{
+    padding: 0px;
+    margin: 0px;
+}
 
 .home{
     background-color: #F3F6FE;
-    height: 100vh;
+    height: 95vh;
     background-image: url(../assets/home-bg.jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
 
+
+    .bg-dark{
+        background-color: $primaria !important;
+        // filter: opacity(0.4);
+    }
+}
+
+
+.about{
+    // background-color: #F3F6FE;
+    height: 95vh;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    max-width: 1905px !important;
 }
 
 .cleft{
     width: 60%;
-    margin-top: 1.5rem;
+    // margin-top: 1.5rem;
     
 
     h1{
-        font-size: 7.5rem;
-        margin-top: 0.5rem;
+        font-size: 800%;
+        // margin-top: 0.5rem;
         font-family: 'Roboto', sans-serif;
         font-weight:950;
         color: $primaria;
@@ -35,15 +55,17 @@ $primaria: #0064A5;
         background-color: $primaria;
         border: none;
         position: static;
+        margin-top: 40px;
+        padding: 10px;
     }
 
 
 }
 
-.container{
-    display: flex;
-    align-items: center;
+.cright{
+    padding-left: 35px;
 }
+
 
 
 
@@ -53,8 +75,10 @@ $primaria: #0064A5;
 	border-radius: 10px;
 	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 	display: flex;
+    align-items: center;
+
 	max-width: 100%;
-	margin: 20px;
+	// margin: 20px;
 	overflow: hidden;
 	width: 520px;
     margin-top: 25rem;
@@ -83,7 +107,7 @@ $primaria: #0064A5;
 	color: #fff;
 	display: inline-block;
 	font-size: 12px;
-	opacity: 0.6;
+	opacity: 0.7;
 	margin-top: 30px;
 	text-decoration: none;
 }
@@ -95,3 +119,96 @@ $primaria: #0064A5;
 }
 
 
+
+
+.contact {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	display: flex;
+    align-items: center;
+    margin: 3% 5%;
+
+	max-width: 100%;
+	// margin: 20px;
+	overflow: hidden;
+	width: 90%;
+    height: 15%;
+}
+
+.contact h6 {
+	opacity: 0.6;
+	margin: 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.contact h2 {
+	letter-spacing: 1px;
+	margin: 10px 0;
+}
+
+.contact-preview {
+	background-color: $primaria;
+	color: #fff;
+	padding: 30px;
+	max-width: 175px;
+}
+
+
+
+.contact-info {
+	padding: 30px;
+	position: relative;
+	width: 100%;
+
+    .info-contact{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 200;
+        
+    }
+}
+
+
+//About
+
+/*===========================
+  Section Title One CSS
+===========================*/
+.section-title-one {
+    top: 100px;
+    text-align: center;
+    max-width: 550px;
+    margin: auto;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 5;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .section-title-one {
+      margin-bottom: 45px;
+    }
+  }
+  @media (max-width: 767px) {
+    .section-title-one {
+      margin-bottom: 35px;
+    }
+  }
+  .section-title-one h2 {
+    margin-bottom: 15px;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .section-title-one h2 {
+      font-size: 2rem;
+      line-height: 2.8rem;
+    }
+  }
+  @media (max-width: 767px) {
+    .section-title-one h2 {
+      font-size: 1.5rem;
+      line-height: 1.9rem;
+    }
+  }
